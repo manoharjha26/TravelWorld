@@ -6,7 +6,7 @@ const app = express();
 app.use(cookieParser());
 
 app.get('/set-cookie', (req, res) => {
-    res.cookie('username','sumeet kumar', { maxAge: 900000, httpOnly: true });
+    res.cookie('username','manohar kumar', { maxAge: 900000, httpOnly: true });
     res.send('Cookie has been set');
   });
 
