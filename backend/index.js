@@ -17,7 +17,7 @@ dotenv.config();
 const app= express()
 const port = process.env.PORt || 4000;
 const corsOptions ={
-  origin: 'https://travel-world-hazel.vercel.app',
+  origin: 'https://travel-world-mdno.vercel.app',
   credentials: true,
   methods: ['GET', 'PUT', 'POST', 'DELETE'],
   allowedHeaders: ['Content-Type'],
