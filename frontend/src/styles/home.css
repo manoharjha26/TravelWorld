@@ -44,7 +44,7 @@
   font-family: var(--subtitle-font-name);
 }
 
-.services__title{
+.services__title {
   font-size: 2.5rem;
   font-weight: 500;
 }
@@ -54,7 +54,7 @@
   font-weight: 500;
 }
 
-.experience__content h2{
+.experience__content h2 {
   font-size: 2.5rem;
   margin-top: 1rem;
   font-weight: 5000;
@@ -90,7 +90,6 @@
   color: var(--text-color);
 }
 
-
 .experience__img img {
   width: 90%;
 }
@@ -102,7 +101,7 @@
 }
 
 .masonry__img {
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .masonry__img:hover {

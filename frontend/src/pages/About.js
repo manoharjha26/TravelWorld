@@ -105,7 +105,7 @@ const About = () => {
             </p>
             <h3 style={styles.subHeading}>Contact Us</h3>
             <p>
-                Have questions or ready to plan your next adventure? Contact our team at <strong style={styles.contact}>@abhinav.gmail.com</strong>.
+                Have questions or ready to plan your next adventure? Contact our team at <strong style={styles.contact}>@exploreglobe.com</strong>.
             </p>
         </div>
     );

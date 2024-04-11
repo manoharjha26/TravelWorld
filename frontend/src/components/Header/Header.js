@@ -1,6 +1,6 @@
-import React, { useRef, useEffect,useContext } from 'react'
+import React, { useRef, useEffect, useContext } from 'react'
 import { Container, Row, Button } from 'reactstrap';
-import { NavLink, Link ,useNavigate} from 'react-router-dom';
+import { NavLink, Link, useNavigate } from 'react-router-dom';
 
 import logo from '../../assets/images/logo.png'
 import './header.css';
@@ -11,30 +11,27 @@ const nav__links = [
     display: 'Home'
   },
   {
-    path: '/about',
-    display: 'About'
-  },
-  {
     path: '/tours',
     display: 'Tours'
   },
   {
-    path: '/hotels',
-    display: 'Hotels'
+    path: '/about',
+    display: 'About'
   }
+
 ]
 
 const Header = () => {
 
   const headerRef = useRef(null)
   const menuRef = useRef(null)
-const navigate =useNavigate()
-const{user, dispatch}=useContext(AuthContext)
+  const navigate = useNavigate()
+  const { user, dispatch } = useContext(AuthContext)
 
-const logout =()=>{
-  dispatch({type:'LOGOUT'})
-  navigate('/')
-}
+  const logout = () => {
+    dispatch({ type: 'LOGOUT' })
+    navigate('/')
+  }
 
 
   const stickyHeaderFunc = () => {
@@ -47,11 +44,11 @@ const logout =()=>{
     })
   }
 
-  useEffect (() => {
+  useEffect(() => {
     stickyHeaderFunc()
     return window.removeEventListener('scroll', stickyHeaderFunc)
   })
-const toggleMenu =()=>menuRef.current.classList.toggle('show_menu')
+  const toggleMenu = () => menuRef.current.classList.toggle('show_menu')
 
   return (
 
@@ -68,7 +65,7 @@ const toggleMenu =()=>menuRef.current.classList.toggle('show_menu')
             {/* =============logo end========== */}
 
             {/* =============menu start========== */}
-            <div className="navigation" ref={menuRef }onclick={toggleMenu}>
+            <div className="navigation" ref={menuRef} onclick={toggleMenu}>
               <ul className="menu d-flex align-items-center gap-5">
                 {nav__links.map((item, index) => (
                   <li className="nav__item" key={index}>
@@ -80,27 +77,27 @@ const toggleMenu =()=>menuRef.current.classList.toggle('show_menu')
             {/* =============menu end========== */}
             <div className="nav__right d-flex align-items-center gap-4">
               <div className="nav__btns d-flex align-items-center gap-4">
-               
 
 
 
-            { user ? (
-            <>
-              <h5 className="mb-0">{user.username}</h5>
-              <button className='btn btn-dark' onClick={logout}>Logout</button>
-              </>) :(<>
-              <Button className='btn secondary__btn'>
-                  <Link to='/login'>Login</Link></Button>
 
-                <Button className='btn primary__btn'>
-                  <Link to='/register'>Register</Link></Button>
+                {user ? (
+                  <>
+                    <h5 className="mb-0">{user.username}</h5>
+                    <button className='btn btn-dark' onClick={logout}>Logout</button>
+                  </>) : (<>
+                    <Button className='btn secondary__btn'>
+                      <Link to='/login'>Login</Link></Button>
 
-              </>
-            )}
-                
+                    <Button className='btn primary__btn'>
+                      <Link to='/register'>Register</Link></Button>
+
+                  </>
+                )}
+
               </div>
 
-              <span className='mobile__menu'onclick={toggleMenu}></span>
+              <span className='mobile__menu' onclick={toggleMenu}></span>
               <i class="ri-menu-line"></i>
             </div>
 

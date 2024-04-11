@@ -52,7 +52,7 @@ const Home = () => {
               <img src={heroImg02} alt="" />
             </div>
           </Col>
-          <SearchBar />
+          {/* <SearchBar /> */}
         </Row>
       </Container>
     </section>
@@ -173,22 +173,7 @@ const Home = () => {
 </section>
 <Newsletter/>
   {/* =============testimonial section end =============*/}
-
-
-
-
-
-
-
-
-
-
-
-
-  </>
-
-
-
+    </>
 }
 
 export default Home
