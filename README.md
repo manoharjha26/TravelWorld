@@ -1,6 +1,4 @@
-The current README.md file in your repository is empty. Here is a suggested content for your README.md file:
 
-```markdown
 # TravelWorld
 
 TravelWorld is a travel and tour project designed to help travelers plan and book their trips more easily and efficiently using MERN stack technology.
@@ -61,7 +59,3 @@ This project is licensed under the MIT License.
 ## Contact
 
 For any inquiries, please contact [manoharjha26](https://github.com/manoharjha26).
-
-```
-
-You can copy this content and update your README.md file.
