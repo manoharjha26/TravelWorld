@@ -1,70 +1,106 @@
-# Getting Started with Create React App
+# TravelWorld
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+TravelWorld is a comprehensive travel and tour web application built using the MERN stack (MongoDB, Express.js, React, Node.js). The platform aims to simplify travel planning and booking for users, providing tools to discover destinations, manage itineraries, and book tours easily and efficiently.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **User Authentication:** Secure registration and login functionality.
+- **Tour Listings:** Browse and search for tours and travel destinations.
+- **Booking System:** Seamless booking and reservation management.
+- **User Dashboard:** Personalized dashboard for managing bookings and preferences.
+- **Admin Panel:** Manage tours, users, and bookings with dedicated admin controls.
+- **Responsive Design:** Optimized for desktops, tablets, and mobile devices.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation
 
-### `npm test`
+1. **Clone the Repository**
+    ```bash
+    git clone https://github.com/manoharjha26/TravelWorld.git
+    cd TravelWorld
+    ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. **Install Backend Dependencies**
+    ```bash
+    cd backend
+    npm install
+    ```
 
-### `npm run build`
+3. **Install Frontend Dependencies**
+    ```bash
+    cd ../frontend
+    npm install
+    ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4. **Set Up Environment Variables**
+   - Create `.env` files in both `backend` and `frontend` directories as per the sample or your requirements.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+5. **Run the Backend Server**
+    ```bash
+    cd ../backend
+    npm start
+    ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+6. **Run the Frontend Application**
+    ```bash
+    cd ../frontend
+    npm start
+    ```
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Usage
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Visit [http://localhost:3000](http://localhost:3000) to access the frontend.
+- Use the dashboard to explore tours, book trips, and manage your travel preferences.
+- Admins can log in to the admin panel for management features.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Contribution Guidelines
 
-## Learn More
+1. **Fork the repository** and create your branch from `main`.
+2. **Make your changes** and ensure code quality and consistency.
+3. **Write clear commit messages.**
+4. **Push to your fork** and submit a pull request.
+5. For major changes, please open an issue first to discuss what you would like to change.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Refer to [GitHub's contributing guide](https://docs.github.com/en/get-started/quickstart/contributing-to-projects) for best practices.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## Issues and Support
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Browse [open issues](https://github.com/manoharjha26/TravelWorld/issues) to find tasks or report bugs.
+- Look for issues labeled `good first issue` or `help wanted` if you’re new to contributing.
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Contributors
 
-### Making a Progressive Web App
+- [manoharjha26](https://github.com/manoharjha26)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Feel free to reach out by opening an issue or discussion on GitHub!
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## License
 
-### Deployment
+This project is licensed under the MIT License. See the [LICENSE](../LICENSE) file for details.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+## Acknowledgements
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [Create React App](https://create-react-app.dev/)
+- [MongoDB](https://www.mongodb.com/)
+- [Express.js](https://expressjs.com/)
+- [React](https://reactjs.org/)
+- [Node.js](https://nodejs.org/)
+
+---
+
+Happy traveling with TravelWorld!
