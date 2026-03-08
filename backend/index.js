@@ -46,6 +46,8 @@ app.get("/", (req, res) => {
     res.send("api is working");
 })
 
+connect();
+
 //middleware
 app.use(express.json());
 app.use(cors(corsOptions));
@@ -60,7 +62,7 @@ app.use("/api/v1/booking" , bookingRoute);
 
 
 
-app.listen(port, () => {
-    connect();
-    console.log('Server listening on Port', port);
-})
+// app.listen(port, () => {
+//     connect();
+//     console.log('Server listening on Port', port);
+// })
