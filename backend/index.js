@@ -15,16 +15,16 @@ dotenv.config();
 const app = express()
 const port = process.env.PORT || 8000;
 
-// const corsOptions = {
-//     origin:true,
-//     credentials:true
-// }
-
 const corsOptions = {
-  origin: "https://travelworlddotcom.vercel.app",
-  methods: ["GET", "POST", "PUT", "DELETE"],
-  credentials: true
-};
+    origin:true,
+    credentials:true
+}
+
+// const corsOptions = {
+//   origin: "https://travelworlddotcom.vercel.app",
+//   methods: ["GET", "POST", "PUT", "DELETE"],
+//   credentials: true
+// };
 
 
 // mongoose.set("strictQuery", false);
